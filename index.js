@@ -17,7 +17,7 @@ http.createServer(function(req, res) {
     busboy.on('file', function(fieldname, file, filename, encoding, mime) {
       file.on('data', function(data) {
         fileSize += data.length;
-        file.resume();
+        //file.resume();
       });
     
       file.on('limit', function() {
